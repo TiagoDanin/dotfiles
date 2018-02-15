@@ -1,0 +1,3 @@
+upstream: wss://lit.luvit.io/
+database: /home/tiago/.litdb.git
+defaultUpstream: wss://lit.luvit.io/

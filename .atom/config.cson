@@ -25,11 +25,11 @@
     tabLength: 4
     tabType: "hard"
   "exception-reporting":
-    userId: "8fdf7c94-23e6-4883-8095-cf0c6ea20ff9"
+    userId: ""
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   "wakatime-hidden":
-    lastInit: 1492778799
+    lastInit: 1518713179
   welcome:
     showOnStartup: false
 ".latino.source":
