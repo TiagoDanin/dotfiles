@@ -1,7 +1,7 @@
 "*":
   "atom-beautify":
     general:
-      _analyticsUserId: "23123"
+      _analyticsUserId: ""
       loggerLevel: "error"
       muteAllErrors: true
       muteUnsupportedLanguageErrors: true
@@ -18,7 +18,7 @@
       "material-syntax"
     ]
   editor:
-    fontSize: 22
+    fontSize: 21
     invisibles:
       space: "#"
     showInvisibles: true
@@ -29,7 +29,7 @@
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   "wakatime-hidden":
-    lastInit: 1518713179
+    lastInit:
   welcome:
     showOnStartup: false
 ".latino.source":
