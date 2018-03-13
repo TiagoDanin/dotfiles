@@ -1,0 +1,1 @@
+docker daemon -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock

@@ -1,0 +1,33 @@
+#!/bin/bash -x
+
+# DEPENDENCIES
+# curl - for downloading files (alternative might be wget)
+# feh - for setting a wallpaper (can use nitrogen as well or others)
+# xorg-xrandr - for figuring out screen resolution (instead of hardcoding)
+
+# String: random | buildings | food | nature | people | technology | objects
+CATEGORY='mountain'
+# Int(seconds): 300+ / 5min+
+TIMEOUT=300
+# String: --bg-center | --bg-fill | --bg-scale | --bg-max | --bg-tile
+BG_TYPE=--bg-fill
+# Will contain something like 1600x900
+RESOLUTION=$(xrandr -q | grep -oP '(?<=connected )(\d+x\d+)' --color=auto)
+RANT=$(date +%s)
+FILE='/home/tiago/Scripts/wall/wall'${RANT}'.jpg'
+
+function setWallpaper () {
+  curl -L https://source.unsplash.com/1600x900/?$CATEGORY > $FILE
+  echo $FILE
+  gsettings set org.gnome.desktop.background picture-uri 'file://'${FILE}
+  feh $BG_TYPE $FILE
+}
+
+if [[ $* == *-d* ]]; then
+  while [[ true ]]; do
+    setWallpaper
+    sleep $TIMEOUT
+  done
+else
+  setWallpaper
+fi
