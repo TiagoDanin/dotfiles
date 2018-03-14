@@ -1,16 +1,19 @@
 "*":
   "atom-beautify":
     general:
-      _analyticsUserId: "23123"
+      analytics: false
       loggerLevel: "error"
       muteAllErrors: true
       muteUnsupportedLanguageErrors: true
+    python:
+      default_beautifier: "yapf"
   core:
     autoHideMenuBar: true
     disabledPackages: [
       "markdown-mindmap"
       "language-latino"
       "language-rust"
+      "language-moonscript"
     ]
     telemetryConsent: "no"
     themes: [
@@ -23,7 +26,6 @@
       space: "#"
     showInvisibles: true
     tabLength: 4
-    tabType: "hard"
   "exception-reporting":
     userId: "46ce8f16-8a34-45bb-904f-2b7aff6da21d"
   wakatime:
