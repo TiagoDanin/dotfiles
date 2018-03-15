@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill '/home/tiago/Scripts/wall/wall1518698210.jpg' 
+'feh' '--bg-scale' '/home/tiago/.config/i3/w4.jpg' 
