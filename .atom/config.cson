@@ -21,11 +21,12 @@
       "material-syntax"
     ]
   editor:
-    fontSize: 22
+    fontSize: 23
     invisibles:
       space: "#"
     showInvisibles: true
     tabLength: 4
+    tabType: "hard"
   "exception-reporting":
     userId: "46ce8f16-8a34-45bb-904f-2b7aff6da21d"
   wakatime:
