@@ -40,7 +40,7 @@ path_exists VPN {
 	format_down = ""
 }
 wireless _first_ {
-	format_up = 	" ⚙️ Wifi %essid"
+	format_up = 	" ⚙️ Wifi %essid (%quality - %bitrate) "
 	format_down = 	" ⚙️ Wifi OFF"
 }
 
@@ -52,7 +52,7 @@ ethernet _first_ {
 battery 0 {
         format = 			"%status %percentage"
 	format_down = 			"  "
-	status_chr = 			"   "
+	status_chr = 			" ❗️ "
 	status_bat = 			"  "
 	status_full =			"  "
 	hide_seconds = 			true

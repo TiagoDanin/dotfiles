@@ -21,7 +21,7 @@
       "material-syntax"
     ]
   editor:
-    fontSize: 23
+    fontSize: 25
     invisibles:
       space: "#"
     showInvisibles: true
