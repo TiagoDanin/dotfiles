@@ -3,7 +3,7 @@ mouseSensitivity:0.62676054
 fov:0.0
 gamma:0.97183096
 saturation:0.0
-renderDistance:4
+renderDistance:3
 guiScale:2
 particles:2
 bobView:false
@@ -11,7 +11,7 @@ anaglyph3d:false
 advancedOpengl:false
 maxFps:30
 fboEnable:true
-difficulty:0
+difficulty:3
 fancyGraphics:false
 ao:0
 clouds:false
@@ -85,13 +85,22 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_ALT Key:56
+key_Boost Key:29
+key_Mode Switch Key:50
+key_Side Inventory Key:0
+key_Hub Expand Key:0
 key_Open CraftGuide:34
 key_invtweaks.key.sort:19
 key_Enable Scenter / Next Block:24
 key_Disable Scenter:38
+key_key.tarmor:0
+key_key.tgoggles:0
+key_key.tbelt:48
+key_key.tzoom:42
 key_WorldEdit Reference:38
 key_BetterFps:88
-soundCategory_master:0.1986755
+soundCategory_master:0.9966887
 soundCategory_music:0.943662
 soundCategory_record:0.70422536
 soundCategory_weather:0.6830986
