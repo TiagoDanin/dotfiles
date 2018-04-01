@@ -1,1 +1,1 @@
-sudo create_ap --config wificonfig -d
+sudo create_ap --config /home/tiago/Scripts/wificonfig -d
