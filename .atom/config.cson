@@ -1,4 +1,18 @@
 "*":
+  "atom-alignment":
+    alignBy: [
+      "=>"
+      ":="
+      ":"
+      "="
+      "|"
+    ]
+    alignmentSpaceChars: [
+      "=>"
+      ":="
+      "="
+      "|"
+    ]
   "atom-beautify":
     general:
       analytics: false

@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# Fix LocalTunnel
+# https://github.com/localtunnel/localtunnel/issues/202#issuecomment-348272971
+unalias lt
