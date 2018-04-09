@@ -1,0 +1,11 @@
+[/]
+font-name='Source Sans Pro 11'
+document-font-name='Source Sans Pro 11'
+show-battery-percentage=true
+cursor-theme='deepin'
+clock-show-seconds=false
+icon-theme='Arc'
+monospace-font-name='Source Code Pro Medium 11'
+enable-animations=false
+gtk-theme='Arc-Flatabulous'
+clock-show-date=true

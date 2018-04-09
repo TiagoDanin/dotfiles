@@ -1,0 +1,6 @@
+[/]
+mouse-button-modifier='<Alt>'
+button-layout='close,minimize,maximize:appmenu'
+resize-with-right-button=true
+workspace-names=['Workspace 1']
+titlebar-font='Noto Sans 11'
