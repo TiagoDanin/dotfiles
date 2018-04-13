@@ -7,7 +7,7 @@ set $light_bg #f1f1f1
 set $dark_bg #010101
 set $shading #4d4d4d
 set $teal #3CA7F3
-set $red #F33C5B
+set $red #FE4365
 set $green #49F33C
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -43,6 +43,14 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_recency
+
+#exec --no-startup-id mopidy
+exec --no-startup-id xfce4-clipman
+#exec --no-startup-id nm-applet
+#exec --no-startup-id compton
+#exec --no-startup-id numlockx on
+#exec --no-startup-id dunst
+exec_always --no-startup-id bash /home/tiago/.config/polybar/launch.sh
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -154,7 +162,7 @@ bindsym $mod+Ctrl+Left workspace prev
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
-#                 set $ws2 2:
+#				 set $ws2 2:
 set $ws1 1
 set $ws2 2
 set $ws3 3
@@ -164,6 +172,10 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 set $ws8 9
+
+assign [class="^xfc4-terminal"] $ws1
+assign [class="^telegram"] $ws9
+assign [class="(?i)Spotify"] $ws8
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -199,10 +211,6 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
 
 for_window [class="^.*"] border pixel 4
 
@@ -238,6 +246,12 @@ for_window [class="Xfburn"] floating enable
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+for_window [window_role="pop-up"] floating enable, move position center
+for_window [window_role="bubble"] floating enable, move position center
+for_window [window_role="task_dialog"] floating enable, move position center
+for_window [window_role="Preferences"] floating enable, move position center
+for_window [window_role="dialog"] floating enable, move position center
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
@@ -251,17 +265,17 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+	bindsym l exec --no-startup-id i3exit lock, mode "default"
+	bindsym s exec --no-startup-id i3exit suspend, mode "default"
+	bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+	bindsym e exec --no-startup-id i3exit logout, mode "default"
+	bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+	bindsym r exec --no-startup-id i3exit reboot, mode "default"
+	bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+	# exit system mode: "Enter" or "Escape"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
 }
 
 # Resize window (you can also use the mouse for that)
@@ -272,10 +286,10 @@ mode "resize" {
 		bindsym l resize shrink height 10 px or 10 ppt
 		bindsym odiaeresis resize grow width 10 px or 10 ppt
 
-		bindsym Left resize shrink width 10 px or 10 ppt
-		bindsym Down resize grow height 10 px or 10 ppt
-		bindsym Up resize shrink height 10 px or 10 ppt
-		bindsym Right resize grow width 10 px or 10 ppt
+		bindsym Left resize shrink width 3 px or 3 ppt
+		bindsym Down resize grow height 3 px or 3 ppt
+		bindsym Up resize shrink height 3 px or 3 ppt
+		bindsym Right resize grow width 3 px or 3 ppt
 
 		bindsym Return mode "default"
 		bindsym Escape mode "default"
@@ -316,68 +330,67 @@ exec_always compton -b
 # Same logic applied to everything else.
 set_from_resource $term_background background
 set_from_resource $term_foreground foreground
-set_from_resource $term_color0     color0
-set_from_resource $term_color1     color1
-set_from_resource $term_color2     color2
-set_from_resource $term_color3     color3
-set_from_resource $term_color4     color4
-set_from_resource $term_color5     color5
-set_from_resource $term_color6     color6
-set_from_resource $term_color7     color7
-set_from_resource $term_color8     color8
-set_from_resource $term_color9     color9
-set_from_resource $term_color10    color10
-set_from_resource $term_color11    color11
-set_from_resource $term_color12    color12
-set_from_resource $term_color13    color13
-set_from_resource $term_color14    color14
-set_from_resource $term_color15    color15
+set_from_resource $term_color0	 color0
+set_from_resource $term_color1	 color1
+set_from_resource $term_color2	 color2
+set_from_resource $term_color3	 color3
+set_from_resource $term_color4	 color4
+set_from_resource $term_color5	 color5
+set_from_resource $term_color6	 color6
+set_from_resource $term_color7	 color7
+set_from_resource $term_color8	 color8
+set_from_resource $term_color9	 color9
+set_from_resource $term_color10	color10
+set_from_resource $term_color11	color11
+set_from_resource $term_color12	color12
+set_from_resource $term_color13	color13
+set_from_resource $term_color14	color14
+set_from_resource $term_color15	color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position top
-	workspace_buttons yes
-	strip_workspace_numbers yes
-#tray_output none
-	tray_padding 0
+#bar {
+#	i3bar_command i3bar
+#	status_command i3status
+#	position top
+#	workspace_buttons yes
+#	strip_workspace_numbers yes
+#	#tray_output none
+#	tray_padding 0
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-font pango:Source Sans Pro 9
-	strip_workspace_numbers yes
+#	bindsym button4 nop
+#	bindsym button5 nop
+#	font pango:Source Sans Pro 9
+#	strip_workspace_numbers yes
 
-	colors {
-		background $dark_bg
-		statusline $light_text
-	separator $dark_bg
-	statusline #F9FAF9
+#	colors {
+#		background $dark_bg
+#		statusline $light_text
+#		separator $dark_bg
+#		statusline #F9FAF9
 
-		# Colors go 	   <border>      <background>   <text>
-		focused_workspace  $light_text  	 $red   	$light_text
-		active_workspace   $dark_bg  	 $dark_bg   	$light_text
-		inactive_workspace $dark_bg  	 $dark_bg   	$light_text
-		urgent_workspace   $light_text   $red
-	}
-}
+#		# Colors go 	   <border>	  <background>   <text>
+#		focused_workspace  $light_text  	 $red   	$light_text
+#		active_workspace   $dark_bg  	 $dark_bg   	$light_text
+#		inactive_workspace $dark_bg  	 $dark_bg   	$light_text
+#		urgent_workspace   $light_text   $red
+#	}
+#}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
 # Theme colors
-# colors                BORDER      BACKGROUND 	TEXT        INDICATOR
-client.focused          #000000	    $red	    $light_text  $red
-client.focused_inactive $teal       $teal     	$dark_text  $light_textB
-client.unfocused        $teal       $teal  	    $dark_text  $red
-client.urgent           $teal	    $teal      	$light_text $red
-#test
-client.background       #2B2C2B
+# colors				BORDER	  BACKGROUND 	TEXT		INDICATOR
+client.focused		  #000000		$red		$light_text  $red
+client.focused_inactive $teal	   $teal	 	$dark_text  $light_textB
+client.unfocused		$teal	   $teal  		$dark_text  $red
+client.urgent		   $teal		$teal	  	$light_text $red
+client.placeholder	  #5a000000   #0c0c0c	 #ffffff	 #000000	 #0c0c0c
+client.background	   #ffffff
 
 #############################
 ### settings for i3-gaps: ###
@@ -406,32 +419,32 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+		bindsym o	  mode "$mode_gaps_outer"
+		bindsym i	  mode "$mode_gaps_inner"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
+		bindsym plus  gaps inner current plus 5
+		bindsym minus gaps inner current minus 5
+		bindsym 0	 gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
+		bindsym Shift+plus  gaps inner all plus 5
+		bindsym Shift+minus gaps inner all minus 5
+		bindsym Shift+0	 gaps inner all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
+		bindsym plus  gaps outer current plus 5
+		bindsym minus gaps outer current minus 5
+		bindsym 0	 gaps outer current set 0
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
+		bindsym Shift+plus  gaps outer all plus 5
+		bindsym Shift+minus gaps outer all minus 5
+		bindsym Shift+0	 gaps outer all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
 }

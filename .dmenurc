@@ -3,22 +3,22 @@
 #
 
 ## define the font for dmenu to be used
-DMENU_FN="Noto-10.5"
+DMENU_FN="SourceCodePro-10.5"
 
 ## background colour for unselected menu-items
-DMENU_NB="#283339"
+DMENU_NB="#1C252E"
 
 ## textcolour for unselected menu-items
-DMENU_NF="#F9FAF9"
+DMENU_NF="#C5E0DC"
 
 ## background colour for selected menu-items
-DMENU_SB="#16A085"
+DMENU_SB="#8E1632"
 
 ## textcolour for selected menu-items
 DMENU_SF="#F9FAF9"
 
 ## command for the terminal application to be used:
-TERMINAL_CMD="terminal -e"
+TERMINAL_CMD="xfce4-terminal -e"
 
 ## export our variables
 DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
