@@ -1,7 +1,7 @@
 [/]
 app-picker-view=uint32 1
 command-history=['r']
-enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'maximus@mathematical.coffee.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'status-menu-buttons@dev.antergos.com', 'unite@hardpixel.eu', 'system-monitor@paradoxxx.zero.gmail.com']
+enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'maximus@mathematical.coffee.gmail.com', 'status-menu-buttons@dev.antergos.com', 'unite@hardpixel.eu', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@paradoxxx.zero.gmail.com']
 disable-user-extensions=false
 had-bluetooth-devices-setup=true
 favorite-apps=['xfce4-terminal.desktop', 'Thunar.desktop', 'google-chrome.desktop']
