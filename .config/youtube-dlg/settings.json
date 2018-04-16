@@ -55,7 +55,7 @@
     "retries": 5,
     "cmd_args": "",
     "write_thumbnail": false,
-    "playlist_start": 32,
+    "playlist_start": 33,
     "nomtime": true,
     "write_info": false,
     "username": "",
