@@ -1,0 +1,11 @@
+{
+  "general": {
+    "cooldown_seconds": 3,
+    "enable_crafting": true,
+    "levels_for_1000_blocks": 20,
+    "levels_for_crossdim": 30,
+    "levels_for_recall": -1,
+    "only_linking_uses_xp": false,
+    "soft_blocks": true
+  }
+}

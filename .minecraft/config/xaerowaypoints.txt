@@ -1,0 +1,20 @@
+waypoint:test_null:gui.xaero_deathpoint:D:-164:68:212:0:false:1:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:CASA:C:-22:69:319:8:false:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:a:A:317:67:294:0:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:i:I:494:62:429:5:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:gg:G:1786:89:2277:5:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:gg:G:1299:66:1271:14:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:a:A:-146:70:298:11:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:gg3:G:1913:74:2409:13:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:gg4:G:1947:75:2701:14:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:gg4:G:1846:79:3640:9:true:0:gui.xaero_default:false:0
+waypoint:MOD 1_10_2_null:....:.:1227:85:10128:12:true:0:gui.xaero_default:false:0
+waypoint:Mundinho 2_null:a:A:-155:82:377:1:false:0:gui.xaero_default:false:0
+waypoint:Mundinho 2_null:b:B:-163:76:471:6:false:0:gui.xaero_default:false:0
+waypoint:Mundinho 2_null:c:C:-505:117:1152:2:false:0:gui.xaero_default:false:0
+waypoint:Mundinho 2_null:d:D:-170:131:1697:9:false:0:gui.xaero_default:false:0
+waypoint:Mundinho 2_null:f:F:1041:77:4987:11:false:0:gui.xaero_default:false:0
+waypoint:Mundinho 2_null:g:G:8956:100:8990:4:false:0:gui.xaero_default:false:0
+waypoint:Mundinho_null:h:H:-14:75:247:5:false:0:gui.xaero_default:false:0
+waypoint:Mundinho_null:g:G:34:69:292:6:false:0:gui.xaero_default:false:0
+waypoint:Mundinho '-'-_null:a:A:5019:93:5044:12:false:0:gui.xaero_default:false:0
