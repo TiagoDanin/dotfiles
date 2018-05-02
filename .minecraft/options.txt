@@ -1,3 +1,4 @@
+version:1343
 invertYMouse:false
 mouseSensitivity:0.62676054
 fov:0.0
@@ -8,16 +9,16 @@ guiScale:2
 particles:2
 bobView:false
 anaglyph3d:false
-advancedOpengl:false
 maxFps:30
 fboEnable:true
-difficulty:3
+difficulty:2
 fancyGraphics:false
 ao:0
-clouds:false
+renderClouds:fast
 resourcePacks:[]
+incompatibleResourcePacks:[]
 lastServer:
-lang:pt_BR
+lang:pt_br
 chatVisibility:0
 chatColors:true
 chatLinks:true
@@ -26,10 +27,10 @@ chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
 enableVsync:false
+useVbo:false
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
-showCape:true
 touchscreen:false
 overrideWidth:0
 overrideHeight:0
@@ -38,21 +39,19 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-showInventoryAchievementHint:false
 mipmapLevels:0
-anisotropicFiltering:1
-streamBytesPerPixel:0.5
-streamMicVolume:1.0
-streamSystemVolume:1.0
-streamKbps:0.5412844
-streamFps:0.31690142
-streamCompression:1
-streamSendMetadata:true
-streamPreferredServer:
-streamChatEnabled:0
-streamChatUserFilter:0
-streamMicToggleBehavior:0
 forceUnicodeFont:false
+reducedDebugInfo:false
+useNativeTransport:true
+entityShadows:false
+mainHand:right
+attackIndicator:1
+showSubtitles:false
+realmsNotifications:true
+enableWeakAttacks:false
+autoJump:false
+narrator:0
+tutorialStep:none
 key_key.attack:47
 key_key.use:46
 key_key.forward:17
@@ -61,6 +60,7 @@ key_key.back:31
 key_key.right:32
 key_key.jump:57
 key_key.sneak:44
+key_key.sprint:16
 key_key.drop:45
 key_key.inventory:18
 key_key.chat:20
@@ -70,12 +70,12 @@ key_key.command:53
 key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
-key_key.sprint:16
-key_key.streamStartStop:64
-key_key.streamPauseUnpause:65
-key_key.streamCommercial:0
-key_key.streamToggleMic:0
 key_key.fullscreen:87
+key_key.spectatorOutlines:0
+key_key.swapHands:33
+key_key.saveToolbarActivator:436
+key_key.loadToolbarActivator:436
+key_key.advancements:38
 key_key.hotbar.1:2
 key_key.hotbar.2:3
 key_key.hotbar.3:4
@@ -85,21 +85,17 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_ALT Key:56
-key_Boost Key:29
-key_Mode Switch Key:50
-key_Side Inventory Key:0
-key_Hub Expand Key:0
+key_keybind.baublesinventory:48
 key_invtweaks.key.sort:19
-key_Enable Scenter / Next Block:24
-key_Disable Scenter:38
-key_key.tarmor:0
-key_key.tgoggles:0
-key_key.tbelt:48
-key_key.tzoom:42
-key_WorldEdit Reference:38
-key_BetterFps:88
-soundCategory_master:0.51986754
+key_key.jei.toggleOverlay:24:CONTROL
+key_key.jei.focusSearch:33:CONTROL
+key_key.jei.toggleCheatMode:0
+key_key.jei.showRecipe:19
+key_key.jei.showUses:22
+key_key.jei.recipeBack:14
+key_key.jei.previousPage:201
+key_key.jei.nextPage:209
+soundCategory_master:0.9470199
 soundCategory_music:0.943662
 soundCategory_record:0.70422536
 soundCategory_weather:0.6830986
@@ -108,3 +104,11 @@ soundCategory_hostile:0.53521127
 soundCategory_neutral:0.6760563
 soundCategory_player:0.76760566
 soundCategory_ambient:0.7605634
+soundCategory_voice:1.0
+modelPart_cape:true
+modelPart_jacket:true
+modelPart_left_sleeve:true
+modelPart_right_sleeve:true
+modelPart_left_pants_leg:true
+modelPart_right_pants_leg:true
+modelPart_hat:true

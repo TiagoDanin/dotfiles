@@ -169,7 +169,7 @@ label = " RAM %gb_used%/%gb_total%"
 [module/wlan]
 type = internal/network
 interface = wlo1
-interval = 5
+interval = 2
 
 format-connected = <label-connected>
 
@@ -183,7 +183,7 @@ label-disconnected-foreground = ${colors.vermelhoclaro}
 [module/eth]
 type = internal/network
 interface = eno1
-interval = 5
+interval = 0
 
 format-connected = <label-connected>
 
