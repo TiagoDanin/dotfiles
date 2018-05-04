@@ -1,7 +1,7 @@
 [/]
 app-picker-view=uint32 1
 command-history=['r']
-enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'maximus@mathematical.coffee.gmail.com', 'status-menu-buttons@dev.antergos.com', 'unite@hardpixel.eu', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@paradoxxx.zero.gmail.com']
+enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'maximus@mathematical.coffee.gmail.com', 'status-menu-buttons@dev.antergos.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'system-monitor@paradoxxx.zero.gmail.com']
 disable-user-extensions=false
 had-bluetooth-devices-setup=true
 favorite-apps=['xfce4-terminal.desktop', 'Thunar.desktop', 'google-chrome.desktop']
@@ -12,7 +12,7 @@ hide-useroptions=true
 menu-layout='Normal'
 apps-list-icon-size=24
 startup-view-mode='List'
-use-panel-menu-icon=false
+use-panel-menu-icon=true
 hide-panel-view=true
 hide-panel-apps=true
 apps-grid-icon-size=48
@@ -21,7 +21,7 @@ disable-panel-menu-hotspot=false
 panel-menu-position='Left'
 disable-activities-hotcorner=true
 apps-grid-label-width=64
-panel-menu-label-text=['Tiago']
+panel-menu-label-text=['']
 shortcuts-display='Favorites'
 shortcuts-icon-size=16
 
