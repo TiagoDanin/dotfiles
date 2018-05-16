@@ -171,11 +171,15 @@ set $ws5 5
 set $ws6 6
 set $ws7 7
 set $ws8 8
-set $ws8 9
+set $ws9 9
 
-assign [class="^xfc4-terminal"] $ws1
-assign [class="^telegram"] $ws9
-assign [class="(?i)Spotify"] $ws8
+assign [class="^steam"] $ws1
+assign [class="^robocraft"] $ws2
+assign [class="^minecraft"] $ws2
+assign [class="^google-chrome-unstable"] $ws3
+assign [class="^telegram-desktop"] $ws4
+assign [class="^spotify"] $ws8
+assign [class="^xfc4-terminal"] $ws9
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -231,7 +235,7 @@ for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [title="About Pale Moon"] floating enable
-for_window [class="Pamac-manager"] floating enable
+#for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
@@ -304,7 +308,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 # exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
+#exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
