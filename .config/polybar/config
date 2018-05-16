@@ -48,7 +48,7 @@ module-margin-right = 2
 font-0 = Source\ Code\ Pro:size=7;1
 font-1 = Icons:size=7;2
 
-modules-left = memory cpu filesystem temperature
+modules-left = memory cpu filesystem github temperature
 modules-center = xwindow
 modules-right = wlan
 
@@ -89,7 +89,7 @@ cursor-scroll = ns-resize
 ; Xwindow
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:50:...%
+label = " %title:0:50:...%"
 label-foreground = ${colors.cinzaclaro}
 
 ; Filesystem
@@ -99,7 +99,7 @@ interval = 3600 ;1H;
 
 mount-0 = /
 
-label-mounted = " %percentage_used%% TiagoEDGE [i3]"
+label-mounted = " %percentage_used%% TiagoEDGE [i3]"
 label-mounted-foreground = ${colors.cinzaclaro}
 
 ; i3
@@ -123,15 +123,15 @@ label-urgent = %index%: %icon%
 label-urgent-foreground = ${colors.vermelhoclaro}
 label-urgent-padding = 1
 
-ws-icon-1 = "1;  terminal"
+ws-icon-1 = "1;"
 ws-icon-2 = "2;  game"
-ws-icon-3 = "3;"
-ws-icon-4 = "4;"
+ws-icon-3 = "3;  internet"
+ws-icon-4 = "4;  telegram"
 ws-icon-5 = "5;"
 ws-icon-6 = "6;"
 ws-icon-7 = "7;"
 ws-icon-8 = "8;  music"
-ws-icon-9 = "9;  telegram"
+ws-icon-9 = "9;  terminal"
 ws-icon-0 = "10;"
 ws-icon-default = " desktop"
 
@@ -154,7 +154,7 @@ card = backlight
 type = internal/cpu
 interval = 1
 format-foreground = ${colors.cinzaclaro}
-label = " CPU %percentage:2%%"
+label = " CPU %percentage:2%%"
 
 ; Memory
 [module/memory]
@@ -163,7 +163,7 @@ interval = 10
 
 format = <label>
 format-foreground = ${colors.cinzaclaro}
-label = " RAM %gb_used%/%gb_total%"
+label = " RAM %gb_used%/%gb_total%"
 
 ; Wireless
 [module/wlan]
@@ -173,7 +173,7 @@ interval = 2
 
 format-connected = <label-connected>
 
-label-connected = " %essid%   %downspeed%  %upspeed% "
+label-connected = " %essid%   %downspeed%  %upspeed% "
 label-connected-foreground = ${colors.verdeclaro}
 
 label-disconnected = "No Wi-Fi connected "
@@ -187,7 +187,7 @@ interval = 0
 
 format-connected = <label-connected>
 
-label-connected = " %local_ip%  %downspeed%  %upspeed% "
+label-connected = " %local_ip%   %downspeed%  %upspeed% "
 label-connected-foreground = ${colors.cinzaclaro}
 
 label-disconnected = "LAN off "
@@ -202,7 +202,7 @@ date = ""
 date-alt = " %Y-%m-%d"
 
 time = "%b %d, %H:%M"
-label = %time%
+label = " %time%"
 
 label-foreground = ${colors.vermelhoclaro}
 
@@ -233,25 +233,25 @@ format-discharging = <ramp-capacity><label-discharging>
 
 label-discharging = %percentage%%
 label-discharging-foreground = ${colors.verdeclaro}
-label-full = " %percentage%%"
+label-full = " %percentage%%"
 label-full-foreground = ${colors.cinzaclaro}
 
-ramp-capacity-0 = " "
-ramp-capacity-1 = " "
-ramp-capacity-2 = " "
-ramp-capacity-3 = " "
-ramp-capacity-4 = " "
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
 ramp-capacity-0-foreground = ${colors.vermelhoescuro}·
 ramp-capacity-1-foreground = ${colors.vermelhoclaro}
 ramp-capacity-2-foreground = ${colors.amareloescuro}
 ramp-capacity-3-foreground = ${colors.verdeclaro}
 ramp-capacity-4-foreground = ${colors.verdeclaro}
 
-animation-charging-0 = ""
-animation-charging-1 = ""
-animation-charging-2 = ""
-animation-charging-3 = ""
-animation-charging-4 = ""
+animation-charging-0 = ""
+animation-charging-1 = ""
+animation-charging-2 = ""
+animation-charging-3 = ""
+animation-charging-4 = ""
 animation-charging-framerate = 350
 
 ; Temperature
@@ -268,7 +268,15 @@ format-foreground = ${colors.vermelhoclaro}
 ; Spotify custom
 [module/spotify]
 type = custom/script
-format-prefix = " "
+format-prefix = " "
 interval = 30
 format-foreground = ${colors.verde}
 exec = bash $HOME/.config/polybar/scripts/music
+
+; Github custom
+[module/github]
+type = custom/script
+format-prefix = "  "
+interval = 200
+format-foreground = ${colors.cinzaclaro}
+exec = TOKEN="$(cat $HOME/.config/polybar/.env/github-token)"; polybar-github $TOKEN false
