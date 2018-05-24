@@ -3,7 +3,7 @@
   "dependencies": {
     "cerebro-basic-apps": "1.0.11",
     "cerebro-chrome-bookmarks": "2.0.0",
-    "cerebro-converter": "1.0.6",
+    "cerebro-converter": "1.0.7",
     "cerebro-emoj": "0.2.4",
     "cerebro-files-nav": "1.0.4",
     "cerebro-gif": "0.2.2",
@@ -17,7 +17,7 @@
     "cerebro-math": "1.0.0",
     "cerebro-npm": "0.2.2",
     "cerebro-open-web": "1.0.0",
-    "cerebro-photos": "0.0.2",
+    "cerebro-photos": "0.1.0",
     "cerebro-timezones": "0.0.5",
     "cerebro-translate": "1.3.0",
     "cerebro-wiki": "1.0.0",

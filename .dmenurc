@@ -6,7 +6,8 @@
 DMENU_FN="SourceCodePro-10.5"
 
 ## background colour for unselected menu-items
-DMENU_NB="#1C252E"
+#DMENU_NB="#1C252E"
+DMENU_NB="#171719"
 
 ## textcolour for unselected menu-items
 DMENU_NF="#C5E0DC"

@@ -4,10 +4,13 @@
 set $light_text #fcfcfc
 set $dark_text #2d2d2d
 set $light_bg #f1f1f1
-set $dark_bg #010101
+set $dark_bg #ff5722 #TRON
+#set $dark_bg #010101 #MOUN
 set $shading #4d4d4d
-set $teal #3CA7F3
-set $red #FE4365
+set $teal #2196f3 #TRON
+#set $teal #3CA7F3 #MOUN
+set $borda #f4c340 #TRON
+#set $borda #FE4365 #MOUN
 set $green #49F33C
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -60,6 +63,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 bindsym $mod+Shift+t exec xfce4-terminal
+bindsym $mod+Enter exec xfce4-terminal
 
 bindsym $mod+Shift+i move up
 bindsym $mod+Shift+j move left
@@ -317,7 +321,7 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id xautolock -time 10 -locker blurlock
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
-exec_always feh --bg-scale /home/tiago/.config/i3/w4.jpg
+exec_always feh --bg-scale /home/tiago/.config/i3/w1.jpg
 exec_always compton -b
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -377,10 +381,10 @@ set_from_resource $term_color15	color15
 #		statusline #F9FAF9
 
 #		# Colors go 	   <border>	  <background>   <text>
-#		focused_workspace  $light_text  	 $red   	$light_text
+#		focused_workspace  $light_text  	 $borda   	$light_text
 #		active_workspace   $dark_bg  	 $dark_bg   	$light_text
 #		inactive_workspace $dark_bg  	 $dark_bg   	$light_text
-#		urgent_workspace   $light_text   $red
+#		urgent_workspace   $light_text   $borda
 #	}
 #}
 
@@ -389,10 +393,10 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # colors				BORDER	  BACKGROUND 	TEXT		INDICATOR
-client.focused		  #000000		$red		$light_text  $red
+client.focused		  #000000		$borda		$light_text  $borda
 client.focused_inactive $teal	   $teal	 	$dark_text  $light_textB
-client.unfocused		$teal	   $teal  		$dark_text  $red
-client.urgent		   $teal		$teal	  	$light_text $red
+client.unfocused		$teal	   $teal  		$dark_text  $borda
+client.urgent		   $teal		$teal	  	$light_text $borda
 client.placeholder	  #5a000000   #0c0c0c	 #ffffff	 #000000	 #0c0c0c
 client.background	   #ffffff
 
