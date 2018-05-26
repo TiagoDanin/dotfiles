@@ -13,10 +13,12 @@ DMENU_NB="#171719"
 DMENU_NF="#C5E0DC"
 
 ## background colour for selected menu-items
-DMENU_SB="#8E1632"
+#DMENU_SB="#8E1632"
+DMENU_SB="#f4c340"
 
 ## textcolour for selected menu-items
-DMENU_SF="#F9FAF9"
+#DMENU_SF="#F9FAF9"
+DMENU_SF="#171719"
 
 ## command for the terminal application to be used:
 TERMINAL_CMD="xfce4-terminal -e"

@@ -1,16 +1,13 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
-set $light_text #fcfcfc
+set $light_text #F9FAF9
 set $dark_text #2d2d2d
 set $light_bg #f1f1f1
-set $dark_bg #ff5722 #TRON
-#set $dark_bg #010101 #MOUN
+set $dark_bg_ugent #f44336 #R
+set $dark_bg #2d2d2d #B
 set $shading #4d4d4d
-set $teal #2196f3 #TRON
-#set $teal #3CA7F3 #MOUN
-set $borda #f4c340 #TRON
-#set $borda #FE4365 #MOUN
+set $teal #2196f3 #B
+set $borda #f4c340 #Y
 set $green #49F33C
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -28,7 +25,7 @@ hide_edge_borders none
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+bindsym $mod+y border pixel 8
 bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -45,7 +42,16 @@ bindsym $mod+Return exec terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
+# dmenu
 bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+Shift+d exec --no-startup-id networkmanager_dmenu
+# Start Applications
+bindsym Print exec --no-startup-id i3-scrot
+bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
+bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+
 
 #exec --no-startup-id mopidy
 exec --no-startup-id xfce4-clipman
@@ -88,7 +94,7 @@ bindsym $mod+Shift+f fullscreen
 
 exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
+exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -97,14 +103,6 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-
-# Start Applications
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
@@ -378,13 +376,13 @@ set_from_resource $term_color15	color15
 #		background $dark_bg
 #		statusline $light_text
 #		separator $dark_bg
-#		statusline #F9FAF9
+#		statusline #dark_bg
 
 #		# Colors go 	   <border>	  <background>   <text>
-#		focused_workspace  $light_text  	 $borda   	$light_text
+#		focused_workspace  $light_text   $borda   		$light_text
 #		active_workspace   $dark_bg  	 $dark_bg   	$light_text
 #		inactive_workspace $dark_bg  	 $dark_bg   	$light_text
-#		urgent_workspace   $light_text   $borda
+#		urgent_workspace   $dark_bg  	 $dark_bg   	$light_text
 #	}
 #}
 
@@ -392,13 +390,13 @@ set_from_resource $term_color15	color15
 bindsym $mod+m bar mode toggle
 
 # Theme colors
-# colors				BORDER	  BACKGROUND 	TEXT		INDICATOR
-client.focused		  #000000		$borda		$light_text  $borda
-client.focused_inactive $teal	   $teal	 	$dark_text  $light_textB
-client.unfocused		$teal	   $teal  		$dark_text  $borda
-client.urgent		   $teal		$teal	  	$light_text $borda
-client.placeholder	  #5a000000   #0c0c0c	 #ffffff	 #000000	 #0c0c0c
-client.background	   #ffffff
+# colors				BORDER	BACKGROUND TEXT	INDICATOR
+client.focused			#000000 $borda $light_text $borda
+client.focused_inactive #000000 $dark_bg $light_text $dark_bg
+client.unfocused		#000000 $dark_bg $light_text $dark_bg
+client.urgent 			#000000 $dark_bg_ugent $light_text $dark_bg_ugent
+client.placeholder		#000000 $dark_bg $light_text $dark_bg
+client.background		#ffffff
 
 #############################
 ### settings for i3-gaps: ###
