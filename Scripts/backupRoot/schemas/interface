@@ -7,5 +7,5 @@ clock-show-seconds=false
 icon-theme='Arc'
 monospace-font-name='Source Code Pro Medium 11'
 enable-animations=false
-gtk-theme='Arc-Flatabulous'
+gtk-theme='Sierra-compact-dark'
 clock-show-date=true
