@@ -169,12 +169,12 @@ label = " RAM %gb_used%/%gb_total%"
 ; Wireless
 [module/wlan]
 type = internal/network
-interface = wlo1
+interface = wlan0
 interval = 2
 
 format-connected = <label-connected>
 
-label-connected = " %essid%   %downspeed%  %upspeed% "
+label-connected = " %essid%  %downspeed%  %upspeed% "
 label-connected-foreground = ${colors.verdeclaro}
 
 label-disconnected = "No Wi-Fi connected "
