@@ -1,0 +1,8 @@
+#!/bin/sh
+file="$HOME/.config/polybar/.env/lastfm-enable"
+scrobbleIsOn="$(cat $file)"
+if [ "$scrobbleIsOn" == "yes" ]; then
+	echo "no" > "$file"
+else
+	echo "yes" > "$file"
+fi

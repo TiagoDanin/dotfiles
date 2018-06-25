@@ -73,7 +73,7 @@ font-0 = Source\ Code\ Pro:size=7;1
 font-1 = Icons:size=7;2
 
 modules-left = i3
-modules-center = spotify
+modules-center = lastfm
 modules-right = xbacklight volume battery date
 
 tray-position = right
@@ -266,13 +266,24 @@ exec = sensors | grep Core | awk '{print substr($3, 2, 2)}' | tr '\n' ' ' | sed 
 format-prefix = "  "
 format-foreground = ${colors.vermelhoclaro}
 
+
+; Lastfm custom
+[module/lastfm]
+type = custom/script
+exec = bash $HOME/.config/polybar/scripts/lastfm
+format-prefix = " "
+format-foreground = ${colors.verde}
+tail = true
+click-left = bash $HOME/.config/polybar/scripts/lastfm-love
+click-right = bash $HOME/.config/polybar/scripts/lastfm-charging
+
 ; Spotify custom
 [module/spotify]
 type = custom/script
 format-prefix = " "
-interval = 30
-format-foreground = ${colors.verde}
+interval = 20
 exec = bash $HOME/.config/polybar/scripts/music
+format-foreground = ${colors.verde}
 
 ; Github custom
 [module/github]

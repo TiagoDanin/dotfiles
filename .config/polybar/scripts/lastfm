@@ -1,0 +1,36 @@
+#!/bin/sh
+#Based in polybar playerctl
+set -e
+playerctl status 2>/dev/null | grep -q "Playing"
+apikey="$(cat $HOME/.config/polybar/.env/lastfm-key)"
+apisecret="$(cat $HOME/.config/polybar/.env/lastfm-secret)"
+username="$(cat $HOME/.config/polybar/.env/lastfm-username)"
+password="$(cat $HOME/.config/polybar/.env/lastfm-password)"
+artist="$(playerctl metadata xesam:artist)"
+title="$(playerctl metadata xesam:title)"
+oldTitle="$title"
+oldAtist="$artist"
+echo "$artist - $title"
+polybar-lastfm "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
+
+scrobble() {
+	artist="$(playerctl metadata xesam:artist)"
+	title="$(playerctl metadata xesam:title)"
+	scrobbleIsOn="$(cat $HOME/.config/polybar/.env/lastfm-enable)"
+	if [ "$title" != "$oldTitle" ]; then
+		if [ "$artist" != "$oldArtist" ]; then
+			oldTitle="$title"
+			oldAtist="$artist"
+			if [ "$scrobbleIsOn" == "yes" ]; then
+				polybar-lastfm "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
+				sleep 20
+			else
+				echo "$artist - $title"
+			fi
+		fi
+	fi
+}
+while [ true ]; do
+	scrobble
+	sleep 20
+done
