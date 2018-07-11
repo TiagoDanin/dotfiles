@@ -75,7 +75,7 @@ preferred-monitor=0
 dash-max-icon-size=48
 
 [extensions/user-theme]
-name='Sierra-compact-dark-solid'
+name='OSX-Arc-White'
 
 [extensions/maximus]
 undecorate-half-maximized=false
