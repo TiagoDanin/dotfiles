@@ -11,26 +11,32 @@ title="$(playerctl metadata xesam:title)"
 oldTitle="$title"
 oldAtist="$artist"
 echo "$artist - $title"
-polybar-lastfm "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
 
 scrobble() {
+	isPlay="$(playerctl status 2>/dev/null)"
 	artist="$(playerctl metadata xesam:artist)"
 	title="$(playerctl metadata xesam:title)"
 	scrobbleIsOn="$(cat $HOME/.config/polybar/.env/lastfm-enable)"
-	if [ "$title" != "$oldTitle" ]; then
-		if [ "$artist" != "$oldArtist" ]; then
-			oldTitle="$title"
-			oldAtist="$artist"
-			if [ "$scrobbleIsOn" == "yes" ]; then
-				polybar-lastfm "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
-				sleep 20
-			else
-				echo "$artist - $title"
+	if [ "$isPlay" == "Playing" ]; then
+		if [ "$title" != "$oldTitle" ]; then
+			if [ "$artist" != "$oldArtist" ]; then
+				oldTitle="$title"
+				oldAtist="$artist"
+				if [ "$scrobbleIsOn" == "yes" ]; then
+					echo "$artist - $title"
+					node $HOME/Documents/GIT/TiagoDanin/Polybar-Lastfm/main.js "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
+					sleep 30
+				else
+					echo "$artist - $title"
+				fi
 			fi
 		fi
+	else
+		echo 'No Song'
+		sleep 20
 	fi
 }
 while [ true ]; do
 	scrobble
-	sleep 20
+	sleep 10
 done

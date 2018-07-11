@@ -1,21 +1,22 @@
+version:1343
 invertYMouse:false
 mouseSensitivity:0.62676054
 fov:0.0
 gamma:0.97183096
 saturation:0.0
-renderDistance:5
+renderDistance:4
 guiScale:2
 particles:2
 bobView:false
 anaglyph3d:false
-advancedOpengl:false
 maxFps:40
 fboEnable:true
 difficulty:2
 fancyGraphics:false
 ao:0
-clouds:false
+renderClouds:false
 resourcePacks:[]
+incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
 chatVisibility:0
@@ -26,10 +27,10 @@ chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
 enableVsync:false
+useVbo:true
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
-showCape:true
 touchscreen:false
 overrideWidth:0
 overrideHeight:0
@@ -38,21 +39,19 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-showInventoryAchievementHint:false
 mipmapLevels:0
-anisotropicFiltering:1
-streamBytesPerPixel:0.5
-streamMicVolume:1.0
-streamSystemVolume:1.0
-streamKbps:0.5412844
-streamFps:0.31690142
-streamCompression:1
-streamSendMetadata:true
-streamPreferredServer:
-streamChatEnabled:0
-streamChatUserFilter:0
-streamMicToggleBehavior:0
 forceUnicodeFont:false
+reducedDebugInfo:false
+useNativeTransport:true
+entityShadows:false
+mainHand:right
+attackIndicator:1
+showSubtitles:false
+realmsNotifications:true
+enableWeakAttacks:false
+autoJump:false
+narrator:0
+tutorialStep:none
 key_key.attack:47
 key_key.use:46
 key_key.forward:17
@@ -61,6 +60,7 @@ key_key.back:31
 key_key.right:32
 key_key.jump:57
 key_key.sneak:44
+key_key.sprint:16
 key_key.drop:45
 key_key.inventory:18
 key_key.chat:20
@@ -70,12 +70,12 @@ key_key.command:53
 key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
-key_key.sprint:16
-key_key.streamStartStop:64
-key_key.streamPauseUnpause:65
-key_key.streamCommercial:0
-key_key.streamToggleMic:0
 key_key.fullscreen:87
+key_key.spectatorOutlines:0
+key_key.swapHands:0
+key_key.saveToolbarActivator:0
+key_key.loadToolbarActivator:0
+key_key.advancements:0
 key_key.hotbar.1:2
 key_key.hotbar.2:3
 key_key.hotbar.3:4
@@ -85,21 +85,45 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_ALT Key:21
-key_Boost Key:22
-key_Mode Switch Key:24
-key_Side Inventory Key:25
-key_Hub Expand Key:23
+key_ALT Key:29
+key_Boost Key:157
+key_Mode Switch Key:184
+key_Side Inventory Key:40
+key_Hub Expand Key:56
+key_keybind.baublesinventory:11
+key_key.ironbackpacks.equip:21
+key_key.ironbackpacks.open:35
+key_key.jei.toggleOverlay:0
+key_key.jei.focusSearch:33:CONTROL
+key_key.jei.toggleCheatMode:0
+key_key.jei.showRecipe:36
+key_key.jei.showUses:22
+key_key.jei.recipeBack:14
+key_key.jei.previousPage:201
+key_key.jei.nextPage:209
 key_invtweaks.key.sort:19
-key_Enable Scenter / Next Block:27
-key_Disable Scenter:26
-key_key.tarmor:35
-key_key.tgoggles:37
-key_key.tbelt:36
-key_key.tzoom:38
-key_WorldEdit Reference:34
-key_BetterFps:88
-soundCategory_master:0.9470199
+key_Player Information:49
+key_Open Class Gui:34
+key_Enable Scenter / Next Block:24
+key_Previous Block:25
+key_Disable Scenter:23
+key_WorldEdit Reference:38
+key_key.journeymap.zoom_in:13
+key_key.journeymap.zoom_out:12
+key_key.journeymap.minimap_type:44:CONTROL
+key_key.journeymap.minimap_preset:45:CONTROL
+key_key.journeymap.create_waypoint:284:CONTROL
+key_key.journeymap.fullscreen_create_waypoint:0
+key_key.journeymap.fullscreen_chat_position:0
+key_key.journeymap.map_toggle_alt:28
+key_key.journeymap.fullscreen_waypoints:47:CONTROL
+key_key.journeymap.minimap_toggle_alt:46:CONTROL
+key_key.journeymap.fullscreen_options:0
+key_key.journeymap.fullscreen.north:200
+key_key.journeymap.fullscreen.south:208
+key_key.journeymap.fullscreen.east:205
+key_key.journeymap.fullscreen.west:203
+soundCategory_master:0.9370861
 soundCategory_music:0.943662
 soundCategory_record:0.70422536
 soundCategory_weather:0.6830986
@@ -108,3 +132,11 @@ soundCategory_hostile:0.53521127
 soundCategory_neutral:0.6760563
 soundCategory_player:0.76760566
 soundCategory_ambient:0.7605634
+soundCategory_voice:1.0
+modelPart_cape:true
+modelPart_jacket:true
+modelPart_left_sleeve:true
+modelPart_right_sleeve:true
+modelPart_left_pants_leg:true
+modelPart_right_pants_leg:true
+modelPart_hat:true
