@@ -30,6 +30,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id pulseaudio
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id seahorse-daemon
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id xfce4-volumed-pulse
 exec --no-startup-id start_conky_maia

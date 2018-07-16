@@ -1,9 +1,0 @@
-{
-    "fonts.fontSize": "15px",
-    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
-    "themes.theme": "os-x-style-flat-dark-theme",
-    "livedev.multibrowser": true,
-    "styleActiveLine": true,
-    "noDistractions": false,
-    "useTabChar": true
-}

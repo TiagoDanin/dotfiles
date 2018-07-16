@@ -1,11 +1,11 @@
 {
   "capture_background" : "false",
   "generate_png" : "true",
-  "show_preview" : "true",
+  "show_preview" : "false",
   "show_list" : "true",
-  "pane_position" : "390",
-  "window_width" : "1024",
-  "window_height" : "527",
+  "pane_position" : "585",
+  "window_width" : "1366",
+  "window_height" : "722",
   "startup_delay" : "20",
   "search-locations" : [
   ]

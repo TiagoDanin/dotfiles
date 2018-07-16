@@ -18,3 +18,13 @@ dconf dump /org/gnome/desktop/screensaver/ > ~/Scripts/backupRoot/schemas/screen
 dconf dump /org/gnome/desktop/interface/ > ~/Scripts/backupRoot/schemas/interface
 dconf dump /org/gnome/desktop/wm/preferences/ > ~/Scripts/backupRoot/schemas/preferences
 dconf dump /org/gnome/shell/ > ~/Scripts/backupRoot/schemas/gnome-shell
+
+sudo rm -r -f conky
+mkdir conky
+cp /usr/share/conky/conky1.10_shortcuts_maia ~/Scripts/backupRoot/conky/
+cp /usr/share/conky/conky_maia ~/Scripts/backupRoot/conky/
+
+sudo rm -r -f bin
+mkdir bin
+cp /bin/start_conky_maia ~/Scripts/backupRoot/bin/
+cp /bin/with ~/Scripts/backupRoot/bin/
