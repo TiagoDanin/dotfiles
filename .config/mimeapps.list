@@ -6,7 +6,7 @@ application/x-xpinstall=org.gnome.FileRoller.desktop;
 text/html=google-chrome-unstable.desktop;wine-extension-htm.desktop;
 application/octet-stream=org.gnome.gedit.desktop;xfce4-terminal.desktop;userapp-exec-WJ9NJZ.desktop;
 application/x-xz=org.gnome.FileRoller.desktop;
-video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
+video/x-matroska=vlc.desktop;userapp-Bluetooth Device-8V2WMZ.desktop;userapp-Bluetooth Device-DEG9LZ.desktop;userapp-Bluetooth Device-QJX3LZ.desktop;org.gnome.Totem.desktop;
 image/png=org.gnome.gThumb.desktop;wine-extension-png.desktop;
 video/x-msvideo=org.gnome.Totem.desktop;
 audio/mpeg=vlc.desktop;deepin-music.desktop;
@@ -29,6 +29,8 @@ model/x.stl-binary=org.gnome.gedit.desktop;
 application/vnd.squashfs=org.gnome.gedit.desktop;
 application/x-desktop=org.gnome.gedit.desktop;
 application/x-wine-extension-ini=org.gnome.gedit.desktop;
+application/xml=org.gnome.gedit.desktop;wine-extension-xml.desktop;
+application/pdf=evince.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=telegramdesktop.desktop

@@ -4,7 +4,7 @@ mouseSensitivity:0.62676054
 fov:0.0
 gamma:0.97183096
 saturation:0.0
-renderDistance:6
+renderDistance:3
 guiScale:2
 particles:2
 bobView:false
@@ -47,7 +47,7 @@ entityShadows:false
 mainHand:right
 attackIndicator:1
 showSubtitles:false
-realmsNotifications:true
+realmsNotifications:false
 enableWeakAttacks:false
 autoJump:false
 narrator:0
@@ -91,6 +91,21 @@ key_Mode Switch Key:184
 key_Side Inventory Key:40
 key_Hub Expand Key:56
 key_keybind.baublesinventory:11
+key_enderio.keybind.glidertoggle:34
+key_enderio.keybind.soundlocator:0
+key_enderio.keybind.nightvision:25
+key_enderio.keybind.gogglesofrevealing:0
+key_enderio.keybind.stepassist:0
+key_enderio.keybind.speed:0
+key_enderio.keybind.jump:0
+key_enderio.keybind.top:0
+key_enderio.keybind.yetawrenchmode:21
+key_enderio.keybind.magnet:0
+key_enderio.keybind.fovreset:0
+key_enderio.keybind.fovplus:0
+key_enderio.keybind.fovminus:0
+key_enderio.keybind.fovplusfast:0
+key_enderio.keybind.fovminusfast:0
 key_key.ironbackpacks.equip:21
 key_key.ironbackpacks.open:35
 key_key.jei.toggleOverlay:0
