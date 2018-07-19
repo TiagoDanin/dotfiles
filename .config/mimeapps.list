@@ -1,0 +1,34 @@
+[Added Associations]
+image/jpeg=org.gnome.gThumb.desktop;feh.desktop;
+video/mp4=vlc.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;
+audio/ogg=vlc.desktop;
+application/x-xpinstall=org.gnome.FileRoller.desktop;
+text/html=google-chrome-unstable.desktop;wine-extension-htm.desktop;
+application/octet-stream=org.gnome.gedit.desktop;xfce4-terminal.desktop;userapp-exec-WJ9NJZ.desktop;
+application/x-xz=org.gnome.FileRoller.desktop;
+video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
+image/png=org.gnome.gThumb.desktop;wine-extension-png.desktop;
+video/x-msvideo=org.gnome.Totem.desktop;
+audio/mpeg=vlc.desktop;deepin-music.desktop;
+audio/mp4=vlc.desktop;mpv.desktop;
+application/vnd.tcpdump.pcap=wireshark.desktop;
+text/plain=org.gnome.gedit.desktop;wine-extension-txt.desktop;
+application/json=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;
+text/markdown=org.gnome.gedit.desktop;
+application/pkix-cert=org.gnome.gedit.desktop;
+video/3gpp=vlc.desktop;userapp-Bluetooth Device-9LZYKZ.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;
+application/x-java-archive=org.gnome.FileRoller.desktop;
+text/vcard=org.gnome.gedit.desktop;
+application/javascript=org.gnome.gedit.desktop;
+text/x-gettext-translation=org.gnome.gedit.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;
+text/x-python3=org.gnome.gedit.desktop;
+text/x-gettext-translation-template=org.gnome.gedit.desktop;
+model/x.stl-binary=org.gnome.gedit.desktop;
+application/vnd.squashfs=org.gnome.gedit.desktop;
+application/x-desktop=org.gnome.gedit.desktop;
+application/x-wine-extension-ini=org.gnome.gedit.desktop;
+
+[Default Applications]
+x-scheme-handler/tg=telegramdesktop.desktop
