@@ -1,0 +1,18 @@
+# created by KDE Plasma, seg mar 26 13:54:34 2018
+#
+# If you do not want Plasma to override your GTK settings, select
+# Colors in the System Settings and disable the checkbox
+# "Apply colors to non-Qt applications"
+#
+#
+
+gtk-alternative-button-order = 1
+gtk-theme-name="Sierra-compact-dark"
+gtk-icon-theme-name="Arc"
+gtk-font-name="SourceSansPro-Regular"
+gtk-cursor-theme-name="Deepin"
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="rgb"
+gtk-application-prefer-dark-theme=1
