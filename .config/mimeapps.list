@@ -1,6 +1,6 @@
 [Added Associations]
 image/jpeg=org.gnome.gThumb.desktop;feh.desktop;
-video/mp4=vlc.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;
+video/mp4=vlc.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;
 audio/ogg=vlc.desktop;
 application/x-xpinstall=org.gnome.FileRoller.desktop;
 text/html=google-chrome-unstable.desktop;wine-extension-htm.desktop;
@@ -31,6 +31,7 @@ application/x-desktop=org.gnome.gedit.desktop;
 application/x-wine-extension-ini=org.gnome.gedit.desktop;
 application/xml=org.gnome.gedit.desktop;wine-extension-xml.desktop;
 application/pdf=evince.desktop;
+application/x-sqlite3=org.gnome.gedit.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=telegramdesktop.desktop
