@@ -1,21 +1,21 @@
 [Added Associations]
 image/jpeg=org.gnome.gThumb.desktop;feh.desktop;
-video/mp4=vlc.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;
+video/mp4=vlc.desktop;org.gnome.Totem.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;deepin-movie.desktop;
 audio/ogg=vlc.desktop;
 application/x-xpinstall=org.gnome.FileRoller.desktop;
-text/html=google-chrome-unstable.desktop;wine-extension-htm.desktop;
+text/html=google-chrome-unstable.desktop;atom.desktop;wine-extension-htm.desktop;
 application/octet-stream=org.gnome.gedit.desktop;xfce4-terminal.desktop;userapp-exec-WJ9NJZ.desktop;
 application/x-xz=org.gnome.FileRoller.desktop;
-video/x-matroska=vlc.desktop;userapp-Bluetooth Device-8V2WMZ.desktop;userapp-Bluetooth Device-DEG9LZ.desktop;userapp-Bluetooth Device-QJX3LZ.desktop;org.gnome.Totem.desktop;
+video/x-matroska=vlc.desktop;mpv.desktop;deepin-movie.desktop;org.gnome.Totem.desktop;userapp-Bluetooth Device-8V2WMZ.desktop;userapp-Bluetooth Device-DEG9LZ.desktop;userapp-Bluetooth Device-QJX3LZ.desktop;
 image/png=org.gnome.gThumb.desktop;wine-extension-png.desktop;
-video/x-msvideo=org.gnome.Totem.desktop;
-audio/mpeg=vlc.desktop;deepin-music.desktop;
+video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
+audio/mpeg=deepin-music.desktop;vlc.desktop;
 audio/mp4=vlc.desktop;mpv.desktop;
 application/vnd.tcpdump.pcap=wireshark.desktop;
-text/plain=org.gnome.gedit.desktop;wine-extension-txt.desktop;
+text/plain=org.gnome.gedit.desktop;vlc.desktop;wine-extension-txt.desktop;
 application/json=org.gnome.gedit.desktop;
 text/x-csrc=org.gnome.gedit.desktop;
-text/markdown=org.gnome.gedit.desktop;
+text/markdown=org.gnome.gedit.desktop;wine-extension-txt.desktop;atom.desktop;
 application/pkix-cert=org.gnome.gedit.desktop;
 video/3gpp=vlc.desktop;userapp-Bluetooth Device-9LZYKZ.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;
 application/x-java-archive=org.gnome.FileRoller.desktop;
@@ -32,6 +32,17 @@ application/x-wine-extension-ini=org.gnome.gedit.desktop;
 application/xml=org.gnome.gedit.desktop;wine-extension-xml.desktop;
 application/pdf=evince.desktop;
 application/x-sqlite3=org.gnome.gedit.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+text/x-arduino=org.gnome.gedit.desktop;
+image/x-xcf=gimp.desktop;
+application/x-yaml=org.gnome.gedit.desktop;
+application/x-cd-image=gnome-disk-image-mounter.desktop;
+text/csv=org.gnome.gedit.desktop;
+application/vnd.android.package-archive=org.gnome.FileRoller.desktop;
+video/webm=deepin-movie.desktop;
+application/x-alpm-package=org.gnome.FileRoller.desktop;
+text/x-log=vlc.desktop;
+application/x-trash=org.gnome.gedit.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=telegramdesktop.desktop

@@ -4,14 +4,14 @@ mouseSensitivity:0.62676054
 fov:0.0
 gamma:0.97183096
 saturation:0.0
-renderDistance:3
+renderDistance:2
 guiScale:2
 particles:2
 bobView:false
 anaglyph3d:false
 maxFps:40
 fboEnable:true
-difficulty:1
+difficulty:2
 fancyGraphics:false
 ao:0
 renderClouds:false
@@ -27,7 +27,7 @@ chatOpacity:1.0
 snooperEnabled:false
 fullscreen:false
 enableVsync:false
-useVbo:true
+useVbo:false
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
@@ -91,23 +91,14 @@ key_Mode Switch Key:184
 key_Side Inventory Key:40
 key_Hub Expand Key:56
 key_keybind.baublesinventory:11
-key_enderio.keybind.glidertoggle:34
-key_enderio.keybind.soundlocator:0
-key_enderio.keybind.nightvision:25
-key_enderio.keybind.gogglesofrevealing:0
-key_enderio.keybind.stepassist:0
-key_enderio.keybind.speed:0
-key_enderio.keybind.jump:0
-key_enderio.keybind.top:0
-key_enderio.keybind.yetawrenchmode:21
-key_enderio.keybind.magnet:0
-key_enderio.keybind.fovreset:0
-key_enderio.keybind.fovplus:0
-key_enderio.keybind.fovminus:0
-key_enderio.keybind.fovplusfast:0
-key_enderio.keybind.fovminusfast:0
 key_key.ironbackpacks.equip:21
 key_key.ironbackpacks.open:35
+key_pe.key.armor_toggle:45
+key_pe.key.charge:47
+key_pe.key.extra_function:46
+key_pe.key.fire_projectile:19
+key_pe.key.mode:34
+key_invtweaks.key.sort:19
 key_key.jei.toggleOverlay:0
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
@@ -116,7 +107,6 @@ key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.previousPage:201
 key_key.jei.nextPage:209
-key_invtweaks.key.sort:19
 key_Player Information:49
 key_Open Class Gui:34
 key_Enable Scenter / Next Block:24
