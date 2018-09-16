@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Based in polybar playerctl
 set -e
 playerctl status 2>/dev/null | grep -q "Playing"
@@ -8,11 +8,20 @@ username="$(cat $HOME/.config/polybar/.env/lastfm-username)"
 password="$(cat $HOME/.config/polybar/.env/lastfm-password)"
 artist="$(playerctl metadata xesam:artist)"
 title="$(playerctl metadata xesam:title)"
+scrobbleIsOn="$(cat $HOME/.config/polybar/.env/lastfm-enable)"
 oldTitle="$title"
-oldAtist="$artist"
+oldArtist="$artist"
 echo "$artist - $title"
 
 scrobble() {
+	node $HOME/Documents/GIT/TiagoDanin/Polybar-Lastfm/main.js "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
+}
+
+if [ "$scrobbleIsOn" == "yes" ]; then
+	scrobble
+fi
+
+check() {
 	isPlay="$(playerctl status 2>/dev/null)"
 	artist="$(playerctl metadata xesam:artist)"
 	title="$(playerctl metadata xesam:title)"
@@ -22,14 +31,35 @@ scrobble() {
 			if [ "$artist" != "$oldArtist" ]; then
 				oldTitle="$title"
 				oldAtist="$artist"
+				echo 'test'
+				echo "$artist - $title"
 				if [ "$scrobbleIsOn" == "yes" ]; then
-					echo "$artist - $title"
-					node $HOME/Documents/GIT/TiagoDanin/Polybar-Lastfm/main.js "$apikey" "$apisecret" "$username" "$password" "scrobble" "$artist" "$title"
-					sleep 30
-				else
-					echo "$artist - $title"
+					scrobble
 				fi
 			fi
+		else
+			for i in {1..6}
+			do
+				sleep 10
+				artist="$(playerctl metadata xesam:artist)"
+				title="$(playerctl metadata xesam:title)"
+				if [ "$title" == "$oldTitle" ]; then
+					if [ "$artist" == "$oldArtist" ]; then
+						if [ "$i" == "6" ]; then
+							oldTitle="$title"
+							oldArtist="$artist"
+							echo "$artist - $title"
+							if [ "$scrobbleIsOn" == "yes" ]; then
+								scrobble
+							fi
+						fi
+					else
+						break
+					fi
+				else
+					break
+				fi
+			done
 		fi
 	else
 		echo 'No Song'
@@ -37,6 +67,6 @@ scrobble() {
 	fi
 }
 while [ true ]; do
-	scrobble
+	check
 	sleep 10
 done

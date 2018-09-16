@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Based in polybar playerctl
 set -e
 playerctl status 2>/dev/null | grep -q "Playing"
