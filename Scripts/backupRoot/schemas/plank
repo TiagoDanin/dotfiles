@@ -2,7 +2,7 @@
 icon-size=50
 show-dock-item=false
 position='bottom'
-dock-items=['Thunar.dockitem', 'xfce4-terminal.dockitem', 'org.gnome.gThumb.dockitem', 'atom.dockitem', 'gnome-tweak-tool.dockitem']
+dock-items=['Thunar.dockitem', 'xfce4-terminal.dockitem', 'org.gnome.gThumb.dockitem', 'atom.dockitem', 'gnome-tweak-tool.dockitem', 'telegramdesktop.dockitem']
 unhide-delay=0
 items-alignment='center'
 theme='Capeos'
