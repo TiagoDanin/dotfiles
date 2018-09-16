@@ -45,7 +45,7 @@ exec --no-startup-id xfce4-volumed-pulse
 exec --no-startup-id start_conky_maia
 exec --no-startup-id dunst
 # Locker in 10min
-# exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 1 -locker blurlock
 # Wallpaper
 exec_always feh --bg-scale /home/tiago/.config/i3/w1.jpg
 ###

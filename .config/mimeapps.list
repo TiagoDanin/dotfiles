@@ -1,6 +1,6 @@
 [Added Associations]
 image/jpeg=org.gnome.gThumb.desktop;feh.desktop;
-video/mp4=vlc.desktop;org.gnome.Totem.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;deepin-movie.desktop;
+video/mp4=org.gnome.Totem.desktop;vlc.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;deepin-movie.desktop;
 audio/ogg=vlc.desktop;
 application/x-xpinstall=org.gnome.FileRoller.desktop;
 text/html=google-chrome-unstable.desktop;atom.desktop;wine-extension-htm.desktop;
@@ -9,7 +9,7 @@ application/x-xz=org.gnome.FileRoller.desktop;
 video/x-matroska=vlc.desktop;mpv.desktop;deepin-movie.desktop;org.gnome.Totem.desktop;userapp-Bluetooth Device-8V2WMZ.desktop;userapp-Bluetooth Device-DEG9LZ.desktop;userapp-Bluetooth Device-QJX3LZ.desktop;
 image/png=org.gnome.gThumb.desktop;wine-extension-png.desktop;
 video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
-audio/mpeg=deepin-music.desktop;vlc.desktop;
+audio/mpeg=vlc.desktop;deepin-music.desktop;
 audio/mp4=vlc.desktop;mpv.desktop;
 application/vnd.tcpdump.pcap=wireshark.desktop;
 text/plain=org.gnome.gedit.desktop;vlc.desktop;wine-extension-txt.desktop;
