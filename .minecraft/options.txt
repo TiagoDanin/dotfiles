@@ -9,9 +9,9 @@ guiScale:2
 particles:2
 bobView:false
 anaglyph3d:false
-maxFps:40
+maxFps:30
 fboEnable:true
-difficulty:2
+difficulty:3
 fancyGraphics:false
 ao:0
 renderClouds:false

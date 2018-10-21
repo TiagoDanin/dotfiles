@@ -1,3 +1,4 @@
+yadm add $(yadm diff --name-only)
 date=$(date +%D-%H:%M)
 yadm commit -S -m "Update in $date"
 yadm push
