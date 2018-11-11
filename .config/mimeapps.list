@@ -3,7 +3,7 @@ image/jpeg=feh.desktop;org.gnome.gThumb.desktop;
 video/mp4=vlc.desktop;org.gnome.Totem.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;deepin-movie.desktop;
 audio/ogg=vlc.desktop;
 application/x-xpinstall=org.gnome.FileRoller.desktop;
-text/html=google-chrome-unstable.desktop;atom.desktop;wine-extension-htm.desktop;
+text/html=org.gnome.gedit.desktop;google-chrome-unstable.desktop;atom.desktop;wine-extension-htm.desktop;
 application/octet-stream=org.gnome.gedit.desktop;xfce4-terminal.desktop;userapp-exec-WJ9NJZ.desktop;
 application/x-xz=org.gnome.FileRoller.desktop;
 video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;mpv.desktop;userapp-Bluetooth Device-8V2WMZ.desktop;userapp-Bluetooth Device-DEG9LZ.desktop;userapp-Bluetooth Device-QJX3LZ.desktop;
@@ -43,6 +43,7 @@ video/webm=deepin-movie.desktop;
 application/x-alpm-package=org.gnome.FileRoller.desktop;
 text/x-log=vlc.desktop;
 application/x-trash=org.gnome.gedit.desktop;
+image/svg+xml=org.gnome.gedit.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=telegramdesktop.desktop

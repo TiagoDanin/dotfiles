@@ -52,7 +52,7 @@ font-1 = Icons:size=7;2
 
 modules-left = memory cpu filesystem github
 modules-center = xwindow
-modules-right = wlan
+modules-right = breaktimer wlan
 
 ; Bottombar
 [bar/bot]
@@ -281,3 +281,16 @@ format-prefix = "  "
 interval = 200
 format-foreground = ${colors.cinzaclaro}
 exec = TOKEN="$(cat $HOME/.config/polybar/.env/github-token)"; polybar-github $TOKEN false
+
+; Polybar Break Timer
+[module/breaktimer]
+type = custom/script
+format-prefix = "Break Timer "
+format-foreground = ${colors.verdeclaro}
+exec = polybar-break-timer $HOME/.config/polybar/.env/break-timer 20
+click-left = echo left >> $HOME/.config/polybar/.env/break-timer
+click-middle = echo middle >> $HOME/.config/polybar/.env/break-timer
+click-right = echo right >> $HOME/.config/polybar/.env/break-timer
+scroll-up = echo scrollUp >> $HOME/.config/polybar/.env/break-timer
+scroll-down = echo scrollDown >> $HOME/.config/polybar/.env/break-timer
+tail = true
