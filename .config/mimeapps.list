@@ -1,16 +1,13 @@
 [Added Associations]
 image/jpeg=feh.desktop;org.gnome.gThumb.desktop;
 video/mp4=vlc.desktop;org.gnome.Totem.desktop;userapp-Bluetooth Device-WTFFMZ.desktop;userapp-Bluetooth Device-CJ7PMZ.desktop;deepin-movie.desktop;
-audio/ogg=vlc.desktop;
 application/x-xpinstall=org.gnome.FileRoller.desktop;
-text/html=org.gnome.gedit.desktop;google-chrome-unstable.desktop;atom.desktop;wine-extension-htm.desktop;
+text/html=google-chrome-unstable.desktop;org.gnome.gedit.desktop;atom.desktop;wine-extension-htm.desktop;
 application/octet-stream=org.gnome.gedit.desktop;xfce4-terminal.desktop;userapp-exec-WJ9NJZ.desktop;
 application/x-xz=org.gnome.FileRoller.desktop;
 video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;deepin-movie.desktop;mpv.desktop;userapp-Bluetooth Device-8V2WMZ.desktop;userapp-Bluetooth Device-DEG9LZ.desktop;userapp-Bluetooth Device-QJX3LZ.desktop;
 image/png=feh.desktop;org.gnome.gThumb.desktop;wine-extension-png.desktop;
 video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
-audio/mpeg=vlc.desktop;deepin-music.desktop;
-audio/mp4=vlc.desktop;mpv.desktop;
 application/vnd.tcpdump.pcap=wireshark.desktop;
 text/plain=org.gnome.gedit.desktop;vlc.desktop;wine-extension-txt.desktop;
 application/json=org.gnome.gedit.desktop;
@@ -44,6 +41,9 @@ application/x-alpm-package=org.gnome.FileRoller.desktop;
 text/x-log=vlc.desktop;
 application/x-trash=org.gnome.gedit.desktop;
 image/svg+xml=org.gnome.gedit.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.gnome.gedit.desktop;evince.desktop;
+application/x-raw-disk-image=gnome-disk-image-mounter.desktop;gnome-disk-image-writer.desktop;
+audio/mpeg=vlc.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=telegramdesktop.desktop

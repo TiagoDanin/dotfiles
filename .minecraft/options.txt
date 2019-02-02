@@ -11,7 +11,7 @@ bobView:false
 anaglyph3d:false
 maxFps:30
 fboEnable:true
-difficulty:3
+difficulty:2
 fancyGraphics:false
 ao:0
 renderClouds:false
@@ -90,7 +90,6 @@ key_Boost Key:157
 key_Mode Switch Key:184
 key_Side Inventory Key:40
 key_Hub Expand Key:56
-key_keybind.baublesinventory:11
 key_key.ironbackpacks.equip:21
 key_key.ironbackpacks.open:35
 key_pe.key.armor_toggle:45
@@ -107,11 +106,6 @@ key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.previousPage:201
 key_key.jei.nextPage:209
-key_Player Information:49
-key_Open Class Gui:34
-key_Enable Scenter / Next Block:24
-key_Previous Block:25
-key_Disable Scenter:23
 key_WorldEdit Reference:38
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12

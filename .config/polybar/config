@@ -278,9 +278,14 @@ format-foreground = ${colors.verde}
 [module/github]
 type = custom/script
 format-prefix = "  "
-interval = 200
 format-foreground = ${colors.cinzaclaro}
-exec = TOKEN="$(cat $HOME/.config/polybar/.env/github-token)"; polybar-github $TOKEN false
+exec = TOKEN="$(cat $HOME/.config/polybar/.env/github-token)"; polybar-github $HOME/.config/polybar/.env/github $TOKEN 150 all+participating true
+click-left = echo left >> $HOME/.config/polybar/.env/github
+click-middle = echo middle >> $HOME/.config/polybar/.env/github
+click-right = echo right >> $HOME/.config/polybar/.env/github
+scroll-up = echo scrollUp >> $HOME/.config/polybar/.env/github
+scroll-down = echo scrollDown >> $HOME/.config/polybar/.env/github
+tail = true
 
 ; Polybar Break Timer
 [module/breaktimer]

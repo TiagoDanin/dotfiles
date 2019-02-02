@@ -14,3 +14,5 @@ fi
 # Fix LocalTunnel
 # https://github.com/localtunnel/localtunnel/issues/202#issuecomment-348272971
 unalias lt
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

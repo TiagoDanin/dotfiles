@@ -37,7 +37,7 @@
     ]
     useProxySettingsWhenCallingApm: false
   editor:
-    fontSize: 17
+    fontSize: 20
     invisibles:
       space: "#"
     showInvisibles: true
