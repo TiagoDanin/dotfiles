@@ -1,16 +1,16 @@
 {
   "dependencies": {
-    "@vue/cli": "^3.6.2",
-    "cp-random": "^1.0.0",
-    "create-cerebro-plugin": "^0.0.20",
+    "@vue/cli": "3.6.3",
+    "cp-random": "1.0.0",
+    "create-cerebro-plugin": "0.0.20",
     "filexshared": "file:/home/tiago/Documents/GIT/TiagoDanin/FileXShared/",
-    "gen-package": "^1.2.0",
-    "gen-readme": "^1.1.2",
-    "http-server": "^0.11.1",
-    "markdown-pdf": "^9.0.0",
-    "np": "^4.0.2",
-    "quasar-cli": "^0.17.24",
-    "react-native-cli": "^2.0.1",
-    "vue-cli": "^2.9.6"
+    "gen-package": "1.2.0",
+    "gen-readme": "1.1.2",
+    "http-server": "0.11.1",
+    "markdown-pdf": "9.0.0",
+    "np": "4.0.2",
+    "quasar-cli": "0.17.24",
+    "react-native-cli": "2.0.1",
+    "vue-cli": "2.9.6"
   }
 }
