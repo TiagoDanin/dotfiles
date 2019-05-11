@@ -4,7 +4,7 @@
     "cp-random": "^1.0.0",
     "create-cerebro-plugin": "^0.0.20",
     "filexshared": "file:/home/tiago/Documents/GIT/TiagoDanin/FileXShared/",
-    "gen-package": "^1.2.0",
+    "gen-package": "^1.4.1",
     "gen-readme": "^1.1.2",
     "http-server": "^0.11.1",
     "markdown-pdf": "^9.0.0",
