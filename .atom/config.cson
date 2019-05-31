@@ -29,6 +29,15 @@
       "language-latino"
       "language-rust"
       "language-moonscript"
+      "atom-alignment"
+      "html-to-javascript"
+      "language-html5-subtlegradient"
+      "language-lua"
+      "telegraf-atom"
+      "uikit-atom"
+      "language-gfm"
+      "language-go"
+      "welcome"
     ]
     telemetryConsent: "no"
     themes: [
@@ -37,7 +46,7 @@
     ]
     useProxySettingsWhenCallingApm: false
   editor:
-    fontSize: 16
+    fontSize: 15
     invisibles:
       space: "#"
     showInvisibles: true

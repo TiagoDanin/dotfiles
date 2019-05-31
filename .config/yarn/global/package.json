@@ -1,16 +1,24 @@
 {
   "dependencies": {
-    "@vue/cli": "^3.6.2",
+    "@quasar/cli": "^1.0.0-beta.7",
+    "@vue/cli": "^3.6.3",
+    "babel-cli": "^6.26.0",
     "cp-random": "^1.0.0",
     "create-cerebro-plugin": "^0.0.20",
-    "filexshared": "file:/home/tiago/Documents/GIT/TiagoDanin/FileXShared/",
-    "gen-package": "^1.2.0",
-    "gen-readme": "^1.1.2",
+    "docxtopdf-cli": "^1.1.0",
+    "filexshared": "^2.3.3",
+    "gen-package": "^1.4.1",
+    "gen-readme": "^1.4.2",
+    "github-push-global": "^1.1.0",
+    "got": "^9.6.0",
     "http-server": "^0.11.1",
     "markdown-pdf": "^9.0.0",
-    "np": "^4.0.2",
-    "quasar-cli": "^0.17.24",
+    "nodemon": "^1.18.11",
+    "np": "^5.0.2",
     "react-native-cli": "^2.0.1",
-    "vue-cli": "^2.9.6"
+    "typescript": "3.4.3",
+    "vue-cli": "^2.9.6",
+    "xo": "^0.24.0",
+    "yarn": "^1.15.2"
   }
 }

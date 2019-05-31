@@ -1,4 +1,3 @@
-; BASED in dotfile of Marcelo Alves :)
 ; Global Settings
 margin-bottom = 4
 margin-top = 4
@@ -75,7 +74,7 @@ font-1 = Icons:size=7;2
 
 modules-left = i3
 modules-center = lastfm
-modules-right = xbacklight volume battery date
+modules-right = backlight pulseaudio battery date
 
 tray-position = right
 tray-padding = 3
@@ -87,6 +86,27 @@ cursor-scroll = ns-resize
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; MODULES ;
+
+; Menu
+[module/menu]
+type = custom/menu
+format = <label-toggle> <menu>
+label-open = 
+label-close = [X]
+label-separator = " | "
+label-foreground = ${colors.cinzaclaro}
+expand-right = true
+menu-0-0 = Dev
+menu-0-0-exec = menu-open-1
+menu-0-1 = Game Mode
+menu-0-1-exec = killall compton & killall conky & killall node & killall electron
+
+menu-1-0 = Atom
+menu-1-0-exec = atom
+menu-1-1 = Chrome
+menu-1-1-exec = google-chrome-unstable
+menu-1-2 = Terminal
+menu-1-2-exec = xfce4-terminal
 
 ; Xwindow
 [module/xwindow]
@@ -137,19 +157,13 @@ ws-icon-9 = "9;  terminal"
 ws-icon-0 = "10;"
 ws-icon-default = " desktop"
 
-; Xbacklight
-[module/xbacklight]
-type = internal/xbacklight
-
+; backlight
+[module/backlight]
+type = internal/backlight
+card = radeon_bl0
 format = <label>
 format-foreground = ${colors.cinzaclaro}
 label = " %percentage%%"
-
-; Backlight-acpi
-[module/backlight-acpi]
-inherit = module/xbacklight
-type = internal/backlight
-card = backlight
 
 ; CPU
 [module/cpu]
@@ -209,8 +223,8 @@ label = " %time%"
 label-foreground = ${colors.vermelhoclaro}
 
 ; Volume
-[module/volume]
-type = internal/volume
+[module/pulseaudio]
+type = internal/pulseaudio
 
 format-volume = <label-volume>
 
@@ -224,7 +238,7 @@ label-muted-foreground = ${colors.cinzaclaro}
 [module/battery]
 type = internal/battery
 battery = BAT0
-adapter = AC
+adapter = ADP1
 full-at = 99
 
 format-charging = <animation-charging> <label-charging>
