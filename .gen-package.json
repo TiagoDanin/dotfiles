@@ -1,0 +1,30 @@
+{
+	"version": "0.0.1",
+	"author": {
+		"name": "Tiago Danin",
+		"email": "TiagoDanin@outlook.com",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"github": {
+		"name": "NAME",
+		"owner": "TiagoDanin"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"test": "xo"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"xo": "0.24.0"
+	},
+	"xo": {
+		"semicolon": false,
+		"rules": {
+			"quote-props": "warn",
+			"eqeqeq": "warn",
+			"array-callback-return": "warn",
+			"require-atomic-updates": "warn",
+			"no-else-return": "off"
+		}
+	}
+}
