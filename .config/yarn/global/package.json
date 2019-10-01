@@ -16,7 +16,7 @@
     "nodemon": "^1.19.1",
     "np": "^5.0.2",
     "react-native-cli": "^2.0.1",
-    "typescript": "3.4.3",
+    "typescript": "3.6.3",
     "vue-cli": "^2.9.6",
     "xo": "^0.24.0",
     "yarn": "^1.15.2"
