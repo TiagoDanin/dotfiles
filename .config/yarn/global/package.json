@@ -10,7 +10,7 @@
     "gen-package": "^1.4.1",
     "gen-readme": "^1.4.2",
     "github-push-global": "^1.1.1",
-    "got": "^10.3.0",
+    "got": "^10.4.0",
     "http-server": "^0.12.1",
     "markdown-pdf": "^10.0.0",
     "nodemon": "^2.0.1",
