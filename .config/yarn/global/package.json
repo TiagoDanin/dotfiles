@@ -14,7 +14,7 @@
     "http-server": "^0.12.1",
     "markdown-pdf": "^10.0.0",
     "nodemon": "^2.0.2",
-    "np": "^6.1.0",
+    "np": "^6.2.0",
     "react-native-cli": "^2.0.1",
     "typescript": "3.7.5",
     "vue-cli": "^2.9.6",
