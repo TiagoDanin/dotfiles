@@ -6,7 +6,7 @@
   "preferGlobal": true,
   "description": "📦🐈 Fast, reliable, and secure dependency management.",
   "resolutions": {
-    "sshpk": "^1.14.2"
+    "sshpk": "^1.16.1"
   },
   "engines": {
     "node": ">=4.0.0"
