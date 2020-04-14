@@ -13,7 +13,7 @@
     "got": "^10.7.0",
     "http-server": "^0.12.1",
     "markdown-pdf": "^10.0.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.3",
     "np": "^6.2.1",
     "react-native-cli": "^2.0.1",
     "typescript": "3.8.3",
