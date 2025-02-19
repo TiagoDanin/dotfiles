@@ -9,7 +9,7 @@
     "sshpk": "^1.16.1"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=4.9.1"
   },
   "repository": "yarnpkg/yarn",
   "bin": {
